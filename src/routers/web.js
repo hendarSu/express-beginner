@@ -10,5 +10,9 @@ web.get("/profile", (req, res) => {
     res.render("profile");
 });
 
+web.get("/user", (req, res) => {
+    res.render("user");
+});
+
 web.use(webHandlerNotFound);
 module.exports = web;
