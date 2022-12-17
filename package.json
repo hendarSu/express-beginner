@@ -1,0 +1,26 @@
+{
+  "name": "express-beginner",
+  "version": "1.0.0",
+  "description": "ini project express beginner",
+  "main": "index.js",
+  "scripts": {
+    "test": "test",
+    "start": "nodemon ./src/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hendarSu/express-beginner.git"
+  },
+  "author": "Hendar",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/hendarSu/express-beginner/issues"
+  },
+  "homepage": "https://github.com/hendarSu/express-beginner#readme",
+  "dependencies": {
+    "ejs": "^3.1.8",
+    "express": "^4.18.2",
+    "morgan": "^1.10.0",
+    "nodemon": "^2.0.20"
+  }
+}
