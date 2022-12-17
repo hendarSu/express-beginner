@@ -11,7 +11,7 @@ web.get("/profile", (req, res) => {
 });
 
 web.get("/user", (req, res) => {
-    res.render("user");
+    res.render("user", { account: "Hendar" });
 });
 
 web.use(webHandlerNotFound);
