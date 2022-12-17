@@ -1,4 +1,6 @@
 const express = require("express");
+const apiHandlerNotFound = require("../middlewares/api-handler-not-found");
+
 const api = express.Router();
 const users = [];
 
@@ -37,4 +39,5 @@ api.delete("/users/:id", (req, res) => {
 
 });
 
+api.use(apiHandlerNotFound);
 module.exports = api;

@@ -1,9 +1,12 @@
 const express = require('express');
+
+// Routers
 const api = require('./api');
 const web = require('./web');
-const router = express.Router();
 
-router.use(web);
+// Setup Router
+const router = express.Router();
 router.use("/api", api);
+router.use("/", web);
 
 module.exports = router;
